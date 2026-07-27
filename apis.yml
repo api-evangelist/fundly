@@ -1,7 +1,25 @@
 aid: fundly
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fundly.png
 name: Fundly
-description: 'Fundly is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Fundly is a Mumbai-based fintech platform purpose-built for India''s pharmaceutical
+  retail supply chain, offering embedded credit, B2B commerce, and payment solutions to
+  pharma retailers and distributors. Its lending product provides unsecured working capital
+  with interest charged only for the period funds are actually drawn, alongside B2B commerce
+  tooling and payment rails tailored to the cash-flow cycles of the pharma industry. Backed
+  by Accel, Fundly distributes primarily through native iOS and Android apps and works with
+  RBI-regulated lending partners. No public API, developer portal, or technical documentation
+  is currently published; this profile tracks the company for the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/fundly/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Ai
+- Fintech
+- Lending
+- Payments
+- Pharmaceutical
+- Commerce
+- India
+- Credit
+- B2B
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fundly-domain-security.yml
 - type: Website
-  url: http://Fundly.ai
+  url: https://fundly.ai
+- type: Support
+  url: https://fundly.ai/support
+- type: Blog
+  url: https://fundly.ai/blog
+- type: TermsOfService
+  url: https://fundly.ai/terms
+- type: PrivacyPolicy
+  url: https://fundly.ai/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
